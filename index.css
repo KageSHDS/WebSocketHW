@@ -1,0 +1,93 @@
+body{
+
+    background-color: #373E4E;
+    color: white;
+}
+
+.container{
+    background-color: #ddebeb;
+    min-height: 100vh;   
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.sendMassage{
+    background-color: #76a692;
+    border-radius:  19px ;
+}
+
+.input_massages, .sendMassage{
+    position: absolute;
+    bottom: 0px;
+}
+.sendMassage{
+    transform: translateY(-10px);
+    cursor: pointer;
+    margin-left: 700px;
+    border: none;
+    background: none;
+}
+.input_massages{
+    transform: translateY(-20px);
+    margin-left: 20px;
+    width: 600px;
+    height: 20px;
+    background-color: #373E4E;
+    border-radius: 22px;
+    padding-left: 10px;
+    color: #FFFFFF
+}
+.chat{
+    position: absolute;
+    bottom: 100px;
+    max-height: 90vh;
+    width: 800px;
+	overflow-y: auto; 
+	padding: 10px;
+	box-sizing: border-box;
+}
+.massage{
+    line-height: 30px;
+    font-size: 50px;
+    position: relative;
+}
+.client {
+    color: black;
+}
+.message{
+    margin: 5px 0;
+    border: 3px;
+    border-color:#373E4E;
+    padding: 1px;
+    background-color: #373E4E;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    max-width: 60%;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.message.client {
+    margin-left: auto; 
+    background-color: #4244488a;
+}
+
+/* Сообщения от других пользователей слева */
+.message.other {
+    margin-right: auto; 
+    background-color: #373E4E;
+} 
+
+.time{
+    font-size: 12px;
+    margin-left: 10px; 
+}
+
+#chat::-webkit-scrollbar {
+    width: 12px; 
+}
+
+#chat::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px; 
+}
